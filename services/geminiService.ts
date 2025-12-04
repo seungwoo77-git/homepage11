@@ -1,2 +1,4 @@
-// API service removed.
-export const generateAdvice = async () => "";
+// API dependencies removed for static deployment.
+export const generateAdvice = async () => {
+  return "";
+};
