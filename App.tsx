@@ -31,7 +31,6 @@ const App: React.FC = () => {
           <div className="flex items-center justify-between h-16">
             <h1 className="text-xl font-bold text-gray-900 tracking-tight">
               청년이음
-              <span className="text-blue-600 text-[10px] ml-1 px-1.5 py-0.5 bg-blue-50 rounded-full align-middle font-medium border border-blue-100">BETA</span>
             </h1>
           </div>
           
@@ -54,7 +53,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-gray-400 text-xs">
             © 2025 청년 맞춤 지원 플랫폼. All rights reserved. <br/>
-            본 서비스는 AI 기술을 활용하여 제공됩니다.
+            여러분의 새로운 시작을 응원합니다.
           </p>
         </div>
       </footer>
