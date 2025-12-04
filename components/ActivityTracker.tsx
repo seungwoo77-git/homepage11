@@ -91,7 +91,7 @@ const ActivityTracker: React.FC<ActivityTrackerProps> = ({ category, activities,
       
       {/* Completion Message */}
       {progress === 100 && (
-        <div className={`mt-6 p-4 rounded-xl flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 ${lightColorClass} ${borderColorClass} border`}>
+        <div className={`mt-6 p-4 rounded-xl flex items-center gap-3 ${lightColorClass} ${borderColorClass} border`}>
           <div className={`p-2 rounded-full bg-white shadow-sm ${themeColor}`}>
             <Trophy size={20} />
           </div>

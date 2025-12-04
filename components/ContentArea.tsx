@@ -72,9 +72,9 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeCategory }) => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+    <div className="w-full max-w-5xl mx-auto space-y-6">
       {/* Hero Section */}
-      <div className={`p-8 rounded-2xl bg-gradient-to-br ${getGradient()} border shadow-sm`}>
+      <div className={`p-8 rounded-2xl bg-gradient-to-br ${getGradient()} border shadow-sm transition-all duration-500`}>
         <div className="flex items-start gap-4">
           <div className="p-3 bg-white rounded-xl shadow-sm">
             {getIcon()}
@@ -131,15 +131,9 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeCategory }) => {
               </div>
             </div>
           )}
-          
-          {/* Study tab also gets Policy info below Timer if needed, 
-              but for cleaner layout we might just keep Timer on left and Tracker on right.
-              Let's add a small policy banner for Study tab below the timer if space permits, 
-              or just rely on the user interface being clean.
-          */}
         </div>
 
-        {/* Right Column: Activity Tracker (Replaces AI) */}
+        {/* Right Column: Activity Tracker */}
         <div className="h-full">
           <ActivityTracker 
             category={activeCategory} 
@@ -149,7 +143,7 @@ const ContentArea: React.FC<ContentAreaProps> = ({ activeCategory }) => {
         </div>
       </div>
       
-      {/* Footer Banner for Policies (Shown for Study tab to ensure content balance) */}
+      {/* Footer Banner for Policies (Shown for Study tab) */}
       {activeCategory === UserCategory.STUDY && (
         <div className="bg-white p-5 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between">
             <div>

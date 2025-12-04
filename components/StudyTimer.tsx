@@ -134,7 +134,7 @@ const StudyTimer: React.FC = () => {
             {/* Inner Content */}
             <div className="absolute inset-0 flex flex-col items-center justify-center">
                 {isEditing ? (
-                    <div className="flex flex-col gap-4 animate-in fade-in zoom-in duration-300 bg-white/90 p-6 rounded-xl backdrop-blur-sm z-10">
+                    <div className="flex flex-col gap-4 bg-white/90 p-6 rounded-xl backdrop-blur-sm z-10">
                         <div className="flex gap-6">
                             <div className="flex flex-col items-center">
                                 <label className="text-xs font-bold text-blue-600 mb-1">집중 (분)</label>
